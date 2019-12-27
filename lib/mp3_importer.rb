@@ -4,7 +4,6 @@ class MP3Importer
   def initialize(path)
     @path = path
     @files = Dir.entries(path).select{|e|e.include?("-")}
-    #binding.pry
   end
   
   def import
