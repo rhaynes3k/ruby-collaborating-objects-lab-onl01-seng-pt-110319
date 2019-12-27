@@ -9,7 +9,6 @@ class MP3Importer
   
   def import
     @files.map{|filename|Song.new_by_filename(filename)}
-    
-    binding.pry
   end
+  
 end
