@@ -1,4 +1,4 @@
-require 'pry'
+
 class MP3Importer
   attr_accessor :path, :files, :song
   def initialize(path)
@@ -10,6 +10,6 @@ class MP3Importer
   def import
     @files.map{|filename|Song.new_by_filename(filename)}
     
-    #binding.pry
+    binding.pry
   end
 end
