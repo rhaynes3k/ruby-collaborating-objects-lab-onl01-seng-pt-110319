@@ -20,7 +20,7 @@ class Song
   def self.new_by_filename(filename)
     
     @name = filename.split("-")
-    song = self.new(name[1].strip)
+    song = Song.new(name[1].strip)
     #song.artist= (Artist.new(name[0].strip))
 #binding.pry
   end
