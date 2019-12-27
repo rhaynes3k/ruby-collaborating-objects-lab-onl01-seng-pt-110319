@@ -21,13 +21,13 @@ class Song
     
     @name = filename.split("-")
     song = self.new(@name[1].strip)
-    song.artist= (Artist.new(@name[1].strip))
+    
 #binding.pry
   end
   
-  # def artist_name=(name)
-  #   @artist_name = artist_name
-  # end
+  def artist_name=(name)
+    song.artist= (Artist.new(@name[0].strip))
+  end
   
   def self.all
     @@all
