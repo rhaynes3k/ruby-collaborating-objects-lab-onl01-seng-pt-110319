@@ -21,7 +21,7 @@ class Song
     
     @name = filename.split("-")
     song = self.new(@name[1].strip)
-    #song.artist= (Artist.new(name[0].strip))
+    song.artist= (Artist.new(@name[0].strip))
 #binding.pry
   end
   
