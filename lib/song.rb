@@ -22,7 +22,7 @@ class Song
     song = self.new(@name[1].strip)
     song.artist= (Artist.find_or_create_by_name(@name[0].strip))
     song
-binding.pry
+#binding.pry
   end
   
   def artist_name=(name)
