@@ -18,11 +18,16 @@ class Song
   end
   
   def self.new_by_filename(filename)
-    name = filename.split("-")
+    
+    @name = filename.split("-")
     song = self.new(name[1].strip)
-    Artist.find_or_create_by_name(name[0])
-   song
+    #song.artist= (Artist.new(name[0].strip))
+#binding.pry
   end
+  
+  # def artist_name=(name)
+  #   @artist_name = artist_name
+  # end
   
   def self.all
     @@all
