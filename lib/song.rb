@@ -18,7 +18,6 @@ class Song
   end
   
   def self.new_by_filename(filename)
-    
     @name = filename.split("-")
     song = self.new(@name[1].strip)
     song.artist= (Artist.find_or_create_by_name(@name[0].strip))
